@@ -1,0 +1,215 @@
+{
+  "groups": [
+    {
+      "id": "aiml",
+      "label": "Upcoming Projects (AI / ML)",
+      "projects": [
+        {
+          "id": "upskilling-ai",
+          "title": "Upskilling & Building in AI",
+          "url": null,
+          "image": null,
+          "stats": [],
+          "description": "Currently brainstorming and developing new ideas focused on deep learning, generative AI, and advanced techniques like RAG. Stay tuned!",
+          "tags": [
+            "Python",
+            "PyTorch",
+            "Generative AI",
+            "RAG"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "graphics",
+      "label": "Game Engines & Graphics",
+      "projects": [
+        {
+          "id": "celeste-clone",
+          "title": "Celeste Clone",
+          "url": "https://github.com/avnishkirnalli/CelesteClone",
+          "image": "assets/celeste_banner.gif",
+          "stats": [
+            "No game engine — fully custom renderer",
+            "Built-in level editor",
+            "Localized in 4 languages"
+          ],
+          "description": "A 2D platformer prototype inspired by Celeste, built from the ground up in C++ with a custom OpenGL renderer — no game engine involved. Features hot-reloadable gameplay code, an in-house level editor, keyframe-based moving platforms, and full localization into English, German, Hindi, and Marathi. Every system, including font rendering (FreeType) and audio, was written by hand.",
+          "tags": [
+            "C++",
+            "OpenGL",
+            "GLSL",
+            "FreeType",
+            "Clang++"
+          ]
+        },
+        {
+          "id": "2d-game-engine",
+          "title": "2D Game Engine",
+          "url": "https://github.com/avnishkirnalli/2DGameEngine",
+          "image": "assets/2dgameengine_banner.mp4",
+          "stats": [
+            "ECS architecture from scratch",
+            "Lua scripting via Sol2"
+          ],
+          "description": "A custom 2D game engine in modern C++ built as a deep-dive into engine architecture. Implements an ECS (Entity-Component-System) framework from scratch, SDL2 rendering, Lua scripting via Sol2, asset & memory management, input handling, and a simple collision system.",
+          "tags": [
+            "C++",
+            "SDL2",
+            "Lua",
+            "Sol2",
+            "Visual Studio"
+          ]
+        },
+        {
+          "id": "drengine",
+          "title": "DrEngine",
+          "url": "https://github.com/avnishkirnalli/DrEngine/tree/main",
+          "image": "assets/drengine_banner.gif",
+          "stats": [
+            "ECS architecture",
+            "Cross-platform",
+            "Batch rendering"
+          ],
+          "description": "A fully custom 2D game engine following ECS architecture. Features automatic Python-based dependency setup, SDL rendering, dynamic DLL linking, batch rendering, and font rendering. Includes a Pong demo built with the engine. Actively maintained for cross-platform compatibility.",
+          "tags": [
+            "C++",
+            "SDL",
+            "Python",
+            "ECS"
+          ]
+        },
+        {
+          "id": "imgui-borderless",
+          "title": "ImGui Borderless Window",
+          "url": "https://github.com/avnishkirnalli/ImGuiBorderlessWindow",
+          "image": "assets/imguiborderlesswindow_banner.png",
+          "stats": [
+            "Cross-platform: Windows, Linux, macOS",
+            "Multiple themes & fonts included"
+          ],
+          "description": "A ready-to-use cross-platform template for borderless windowed applications based on Dear ImGui. Ships with multiple themes, font choices, and easy asset loading — ideal for mod menus, helper tools, and utility apps. Works on Windows, Linux, and macOS. Occasionally maintained to stay functional on all supported platforms.",
+          "tags": [
+            "C++",
+            "Dear ImGui",
+            "Python",
+            "Windows / Linux / macOS"
+          ]
+        },
+        {
+          "id": "snake-bgi",
+          "title": "Snake Game (BGI)",
+          "url": "https://github.com/avnishkirnalli/SnakeGame-BGI",
+          "image": "assets/snake_banner.mp4",
+          "stats": [
+            "Single-file implementation",
+            "No external libraries — pure bare-metal C"
+          ],
+          "description": "Classic Snake game built with the Borland Graphics Interface in C. The entire game — rendering, logic, input — lives in a single source file. A study in bare-metal C graphics programming.",
+          "tags": [
+            "C",
+            "Borland Graphics Interface",
+            "DSA"
+          ]
+        },
+        {
+          "id": "scummvm",
+          "title": "ScummVM — Open Source Contribution",
+          "url": "https://github.com/scummvm/scummvm/pull/7288",
+          "image": "assets/scummvm_banner.jpg",
+          "stats": [
+            "New Cast Details window shipped",
+            "Large-scale existing C++ codebase"
+          ],
+          "description": "Contributed to the large-scale open-source project ScummVM. Navigated a substantial existing C++ codebase, extended existing systems, and implemented a new Cast Details window for the Director engine. Also handled bug tracking and fixes.",
+          "tags": [
+            "C++",
+            "Open Source",
+            "ScummVM Director Engine"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "apps",
+      "label": "Apps & Systems",
+      "projects": [
+        {
+          "id": "recipto",
+          "title": "Recipto",
+          "url": "https://github.com/avnishkirnalli/Recipto",
+          "image": "assets/recipto_banner.png",
+          "badge": "Diploma Capstone",
+          "stats": [
+            "AI-powered receipt scanning",
+            "Automated monthly PDF reports",
+            "Spend visualization with charts"
+          ],
+          "description": "An AI-powered receipt scanner and expense manager. Captures or shares receipt images (including from UPI apps), extracts transaction details via AI, categorizes expenses, tracks financial goals, and generates monthly PDF reports delivered by email. Visualizes spend with pie charts.",
+          "tags": [
+            "Flutter",
+            "Dart",
+            "Firebase",
+            "Google Cloud",
+            "AI/ML"
+          ]
+        },
+        {
+          "id": "mood-chat",
+          "title": "Mood Chat",
+          "url": "https://github.com/avnishkirnalli/MoodChat",
+          "image": "assets/moodchat_banner.png",
+          "stats": [
+            "Real-time sentiment analysis",
+            "Live video calling via WebRTC",
+            "Dynamic UI theming"
+          ],
+          "description": "A real-time chat app with a twist: the UI theme morphs dynamically based on the emotional sentiment of the conversation, powered by Generative AI. Includes live video calling via WebRTC and Firebase authentication.",
+          "tags": [
+            "Java",
+            "XML",
+            "Firebase",
+            "WebRTC",
+            "Generative AI"
+          ]
+        },
+        {
+          "id": "tv-companion",
+          "title": "TV Companion",
+          "url": "https://github.com/avnishkirnalli/TVCompanion",
+          "image": "assets/tvcompanion_banner.png",
+          "stats": [
+            "Two-app system: phone + TV",
+            "Live LAN screen streaming",
+            "Remote URL launching & volume control"
+          ],
+          "description": "A two-app Android system for rich remote control of Android TV devices over LAN — beyond what the stock Google TV app offers. Supports URL launching, volume control, and live screen streaming from TV to phone.",
+          "tags": [
+            "Java",
+            "XML",
+            "Android",
+            "LAN networking"
+          ]
+        },
+        {
+          "id": "mad-internship",
+          "title": "Android Projects (MAD Internship)",
+          "url": "https://github.com/avnishkirnalli/MAD_Internship",
+          "image": "assets/mad_banner.png",
+          "stats": [
+            "41 apps built",
+            "Broad Android API coverage",
+            "Single consolidated repository"
+          ],
+          "description": "A learning sprint: 41 Android applications developed in Java and XML as part of a Mobile Application Development internship during the Diploma in Computer Engineering. A broad survey of Android APIs, UI patterns, and device integrations in a single repository.",
+          "tags": [
+            "Java",
+            "XML",
+            "Android Studio",
+            "41 apps"
+          ]
+        }
+      ]
+    }
+  ]
+}

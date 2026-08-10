@@ -1,0 +1,14 @@
+[
+  {
+    "file": "posts/welcome",
+    "title": "Welcome to my first blog",
+    "date": "2026-08-10",
+    "tags": [
+      "meta",
+      "first-blog",
+      "introduction",
+      "welcome"
+    ],
+    "description": "Every blog starts somewhere. This one starts with a note about why I'd rather write long-form than keep everything compressed into a LinkedIn post."
+  }
+]

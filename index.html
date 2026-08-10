@@ -1,0 +1,1044 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Avnish Kirnalli</title>
+  <meta name="description"
+    content="Avnish Kirnalli - Computer Engineering student building on AI/ML. Based in Mumbai, India.">
+  <meta property="og:title" content="Avnish Kirnalli">
+  <meta property="og:description" content="Computer Engineering student building on AI/ML. Based in Mumbai, India.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://avnishkirnalli.github.io/">
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:title" content="Avnish Kirnalli">
+  <meta name="twitter:description" content="Computer Engineering student building on AI/ML. Based in Mumbai, India.">
+  <link rel="canonical" href="https://avnishkirnalli.github.io/">
+  <style>
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+      line-height: 1.6;
+      color: #222;
+      background-color: #fff;
+      font-size: 16px;
+      margin: 0;
+      padding: 0;
+    }
+
+    a {
+      color: #0056b3;
+    }
+
+    a:hover {
+      text-decoration: underline;
+    }
+
+    hr {
+      border: 0;
+      border-top: 1px solid #ddd;
+      margin: 0;
+    }
+
+    .container {
+      max-width: 800px;
+      margin: 0 auto;
+      padding: 12px 24px;
+    }
+
+    .row {
+      display: flex;
+      flex-wrap: wrap;
+    }
+
+    /* ── Header ── */
+    #dhead {
+      margin-top: 36px;
+      margin-bottom: 16px;
+    }
+
+    #dpic {
+      flex: 0 0 150px;
+      text-align: center;
+      margin-right: 32px;
+    }
+
+    /* Profile picture: if the file doesn't exist yet, the circle still renders cleanly */
+    .ppic {
+      width: 140px;
+      height: 140px;
+      border-radius: 50%;
+      object-fit: cover;
+      background-color: #f0f0f0;
+      border: 2px solid #e0e0e0;
+      box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+      display: block;
+      /* Hides the broken-image icon when src file is absent */
+      color: transparent;
+    }
+
+    /* Initials fallback shown when profile.jpg is missing */
+    .ppic-wrap {
+      width: 140px;
+      height: 140px;
+      border-radius: 50%;
+      position: relative;
+      display: inline-block;
+    }
+
+    .ppic-fallback {
+      position: absolute;
+      inset: 0;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      border-radius: 50%;
+      background-color: #e8edf2;
+      border: 2px solid #e0e0e0;
+      box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+      font-size: 2.4rem;
+      font-weight: 700;
+      color: #888;
+      letter-spacing: 0.04em;
+      user-select: none;
+      z-index: 0;
+    }
+
+    .ppic {
+      width: 140px;
+      height: 140px;
+      border-radius: 50%;
+      object-fit: cover;
+      background-color: transparent;
+      border: 2px solid #e0e0e0;
+      box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+      display: block;
+      position: relative;
+      z-index: 1;
+      /* Hides the broken-image icon when src file is absent */
+      color: transparent;
+    }
+
+    #ddesc {
+      flex: 1;
+      min-width: 260px;
+    }
+
+    #ddesc h1 {
+      margin: 0 0 6px 0;
+      font-size: 2.1rem;
+    }
+
+    #ddesc h2 {
+      margin: 0 0 14px 0;
+      font-size: 1.05rem;
+      font-weight: normal;
+      color: #555;
+    }
+
+    /* Social icon buttons */
+    #dico {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+      margin-top: 4px;
+    }
+
+    .iico {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      width: 36px;
+      height: 36px;
+      border-radius: 6px;
+      border: 1px solid #ddd;
+      background: #fafafa;
+      transition: background 0.15s, border-color 0.15s;
+      text-decoration: none;
+    }
+
+    .iico svg {
+      width: 18px;
+      height: 18px;
+      fill: #555;
+      transition: fill 0.15s;
+    }
+
+    .iico:hover {
+      text-decoration: none;
+    }
+
+    .iico.gh:hover {
+      background: #f0f0f0;
+      border-color: #333;
+    }
+
+    .iico.gh:hover svg {
+      fill: #333;
+    }
+
+    .iico.li:hover {
+      background: #e8f4fb;
+      border-color: #0077b5;
+    }
+
+    .iico.li:hover svg {
+      fill: #0077b5;
+    }
+
+    .iico.tw:hover {
+      background: #f5f5f5;
+      border-color: #000;
+    }
+
+    .iico.tw:hover svg {
+      fill: #000;
+    }
+
+    .iico.ig:hover {
+      background: #fce4ec;
+      border-color: #e1306c;
+    }
+
+    .iico.ig:hover svg {
+      fill: #e1306c;
+    }
+
+    /* ── Section titles ── */
+    .ctitle {
+      font-size: 1.25rem;
+      font-weight: bold;
+      margin: 24px 0 16px 0;
+      letter-spacing: 0.01em;
+      color: #111;
+    }
+
+    /* ── Bio ── */
+    #bio {
+      color: #444;
+    }
+
+    /* ── Bracket group ── */
+    .bracket-group {
+      display: flex;
+      gap: 0;
+      margin-top: 4px;
+    }
+
+    .bracket-side {
+      flex: 0 0 auto;
+      display: flex;
+      align-items: center;
+      margin-right: 16px;
+      position: relative;
+    }
+
+    /* The visual bracket: left border with top + bottom horizontal ticks */
+    .bracket-side::before {
+      content: '';
+      position: absolute;
+      top: 4px;
+      bottom: 4px;
+      left: 0;
+      border-left: 1.5px solid #d0d0d0;
+      border-top: 1.5px solid #d0d0d0;
+      border-bottom: 1.5px solid #d0d0d0;
+      width: 6px;
+      border-radius: 2px 0 0 2px;
+    }
+
+    .bracket-label {
+      writing-mode: vertical-rl;
+      transform: rotate(180deg);
+      font-size: 0.68rem;
+      color: #bbb;
+      text-transform: uppercase;
+      letter-spacing: 0.12em;
+      white-space: nowrap;
+      padding-left: 10px;
+    }
+
+    .bracket-entries {
+      flex: 1;
+      min-width: 0;
+    }
+
+    @media (max-width: 580px) {
+      .bracket-side {
+        margin-right: 8px;
+      }
+
+      .bracket-label {
+        font-size: 0.60rem;
+      }
+    }
+
+    /* ── Timeline ── */
+    .entry {
+      margin-bottom: 22px;
+    }
+
+    .timespan {
+      flex: 0 0 150px;
+      font-size: 0.88rem;
+      font-weight: 600;
+      color: #666;
+      padding-top: 2px;
+    }
+
+    .ico {
+      flex: 0 0 20px;
+      position: relative;
+      margin-right: 14px;
+    }
+
+    /* Vertical connector line */
+    .ico::before {
+      content: '';
+      position: absolute;
+      left: 50%;
+      top: 16px;
+      bottom: -22px;
+      width: 1px;
+      background: #ddd;
+      transform: translateX(-50%);
+    }
+
+    .entry:last-child .ico::before {
+      display: none;
+    }
+
+    .entry-dot {
+      width: 10px;
+      height: 10px;
+      border-radius: 50%;
+      background: #ccc;
+      margin: 4px auto 0 auto;
+      border: 2px solid #fff;
+      box-shadow: 0 0 0 1px #ccc;
+    }
+
+    /* Active / current role dot */
+    .entry-dot.active {
+      background: #0056b3;
+      box-shadow: 0 0 0 1px #0056b3;
+    }
+
+    /* Upcoming entry dot */
+    .entry-dot.future {
+      background: #fff;
+      box-shadow: 0 0 0 1.5px #aaa;
+    }
+
+    .desc {
+      flex: 1;
+      min-width: 260px;
+    }
+
+    .desc p {
+      margin: 2px 0 0 0;
+      font-size: 0.95rem;
+      color: #444;
+    }
+
+
+    /* ── Tech Stack ── */
+    .stack-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+      gap: 12px;
+      align-items: stretch;
+    }
+
+    .stack-group {
+      border: 1px solid #ebebeb;
+      border-radius: 8px;
+      padding: 14px 16px;
+      background: #fafafa;
+    }
+
+    .stack-group h3 {
+      font-size: 0.80rem;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 0.08em;
+      color: #888;
+      margin: 0 0 8px 0;
+      padding-bottom: 6px;
+      border-bottom: 1px solid #888;
+    }
+
+    .stack-group p {
+      margin: 0;
+      font-size: 0.90rem;
+      color: #333;
+      line-height: 1.55;
+    }
+
+    /* ── Projects ── */
+    #pet-projects .proj-group-label {
+      font-size: 0.85rem;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 0.08em;
+      color: #888;
+      margin: 28px 0 14px 0;
+      border-bottom: 1px solid #f0f0f0;
+      padding-bottom: 4px;
+    }
+
+    .proj-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 20px;
+    }
+
+    .proj-card {
+      border: 1px solid #e8e8e8;
+      border-radius: 10px;
+      overflow: hidden;
+      display: flex;
+      flex-direction: column;
+      transition: box-shadow 0.18s, border-color 0.18s;
+    }
+
+    .proj-card:hover {
+      box-shadow: 0 4px 18px rgba(0, 0, 0, 0.09);
+      border-color: #d0d0d0;
+    }
+
+    .proj-img-wrap {
+      width: 100%;
+      aspect-ratio: 16 / 9;
+      overflow: hidden;
+      background: #e8e8e8;
+      position: relative;
+      flex-shrink: 0;
+    }
+
+    /* Shimmer loading skeleton */
+    .proj-img-wrap::before {
+      content: '';
+      position: absolute;
+      inset: 0;
+      background: linear-gradient(90deg, #e8e8e8 25%, #f2f2f2 50%, #e8e8e8 75%);
+      background-size: 200% 100%;
+      animation: shimmer 1.4s infinite;
+      z-index: 1;
+    }
+
+    @keyframes shimmer {
+      0% {
+        background-position: 200% 0;
+      }
+
+      100% {
+        background-position: -200% 0;
+      }
+    }
+
+    /* Hide shimmer once media is loaded */
+    .proj-img-wrap.loaded::before {
+      display: none;
+    }
+
+    .proj-img-wrap img,
+    .proj-img-wrap video {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      display: block;
+      position: relative;
+      z-index: 2;
+    }
+
+    .proj-body {
+      padding: 14px 16px 16px;
+      display: flex;
+      flex-direction: column;
+      flex: 1;
+    }
+
+    .proj-title {
+      font-weight: 600;
+      font-size: 0.98rem;
+      margin-bottom: 7px;
+      line-height: 1.3;
+    }
+
+    .proj-title a {
+      color: #0056b3;
+      text-decoration: none;
+    }
+
+    .proj-title a:hover {
+      text-decoration: underline;
+    }
+
+    /* Experience company links — same style as project titles */
+    .desc strong a {
+      color: #0056b3;
+      text-decoration: none;
+    }
+
+    .desc strong a:hover {
+      text-decoration: underline;
+    }
+
+    .proj-badge {
+      display: inline-block;
+      font-size: 0.72rem;
+      font-weight: 500;
+      color: #888;
+      background: #f2f2f2;
+      border-radius: 4px;
+      padding: 1px 6px;
+      margin-left: 6px;
+      vertical-align: middle;
+    }
+
+    .proj-stats {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 5px;
+      margin-bottom: 9px;
+    }
+
+    .proj-stat {
+      font-size: 0.74rem;
+      font-weight: 600;
+      color: #0056b3;
+      background: #eaf0fb;
+      border-radius: 4px;
+      padding: 2px 7px;
+      white-space: nowrap;
+    }
+
+    .proj-desc {
+      font-size: 0.90rem;
+      color: #444;
+      line-height: 1.55;
+      flex: 1;
+    }
+
+    .proj-tags {
+      display: block;
+      margin-top: 10px;
+      font-size: 0.78rem;
+      color: #999;
+      font-style: italic;
+    }
+
+    /* ── Blog section ── */
+
+    .blog-list {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+    }
+
+    .blog-list li {
+      display: flex;
+      align-items: baseline;
+      gap: 12px;
+      padding: 9px 0;
+      border-bottom: 1px solid #f2f2f2;
+      margin-bottom: 0;
+      font-size: 0.95rem;
+    }
+
+    .blog-list li:last-child {
+      border-bottom: none;
+    }
+
+    .blog-date {
+      flex: 0 0 90px;
+      font-size: 0.80rem;
+      color: #bbb;
+      white-space: nowrap;
+    }
+
+    .blog-title a {
+      color: #222;
+      text-decoration: none;
+    }
+
+    .blog-title a:hover {
+      color: #0056b3;
+      text-decoration: none;
+    }
+
+    .blog-all {
+      display: inline-block;
+      margin-top: 12px;
+      font-size: 0.85rem;
+      color: #0056b3;
+    }
+
+    /* Blog icon button */
+    .iico.bl:hover {
+      background: #f0faf4;
+      border-color: #2d9e5f;
+    }
+
+    .iico.bl:hover svg {
+      fill: #2d9e5f;
+    }
+
+    /* Legacy .tags (misc section safety net) */
+    .tags {
+      display: block;
+      margin-top: 4px;
+      font-size: 0.8rem;
+      color: #999;
+      font-style: italic;
+    }
+
+    /* ── Misc ── */
+    ul {
+      padding-left: 20px;
+      margin-top: 0;
+    }
+
+    li {
+      margin-bottom: 8px;
+      font-size: 0.95rem;
+    }
+
+    /* ── Footer ── */
+    .footer {
+      text-align: center;
+      padding: 36px 20px;
+      color: #aaa;
+      font-size: 0.82rem;
+      border-top: 1px solid #eee;
+      margin-top: 48px;
+    }
+
+    /* ── Responsive ── */
+    @media (max-width: 580px) {
+      #dpic {
+        flex: 100%;
+        margin: 0 auto 20px auto;
+      }
+
+      #ddesc {
+        min-width: unset;
+      }
+
+      #ddesc h1 {
+        font-size: 1.7rem;
+      }
+
+      .timespan {
+        flex: 100%;
+        margin-bottom: 2px;
+      }
+
+      .ico {
+        display: none;
+      }
+
+      .stack-grid {
+        grid-template-columns: 1fr 1fr;
+      }
+
+      .proj-grid {
+        grid-template-columns: 1fr;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+  <!-- ════════════════════ HEADER ════════════════════ -->
+  <div id="dhead" class="container">
+    <div class="row">
+
+      <div id="dpic">
+        <!--
+          Drop your profile photo as "profile.jpg" in the root of the repo.
+          If absent, the initials "AK" are shown as a fallback.
+        -->
+        <div class="ppic-wrap">
+          <div class="ppic-fallback" aria-hidden="true">AK</div>
+          <img src="assets/profile.jpg" alt="Avnish Kirnalli" class="ppic" onerror="this.style.opacity='0'">
+        </div>
+      </div>
+
+      <div id="ddesc">
+        <h1>Avnish Kirnalli</h1>
+        <h2><em>I like building RAG pipelines and making LLMs actually useful 🧠🤖</em></h2>
+
+        <div id="dico">
+
+          <!-- GitHub -->
+          <a href="https://github.com/avnishkirnalli" class="iico gh" aria-label="GitHub" title="GitHub">
+            <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+              <path
+                d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61-.546-1.387-1.333-1.757-1.333-1.757-1.09-.745.083-.729.083-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23a11.509 11.509 0 0 1 3.004-.404c1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.572C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12" />
+            </svg>
+          </a>
+
+          <!-- LinkedIn -->
+          <a href="https://linkedin.com/in/avnishkirnalli" class="iico li" aria-label="LinkedIn" title="LinkedIn">
+            <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+              <path
+                d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 0 1-2.063-2.065 2.064 2.064 0 1 1 2.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z" />
+            </svg>
+          </a>
+
+          <!-- X / Twitter -->
+          <a href="https://x.com/avnishkirnalli" class="iico tw" aria-label="X (Twitter)" title="X (Twitter)">
+            <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+              <path
+                d="M18.901 1.153h3.68l-8.04 9.19L24 22.846h-7.406l-5.8-7.584-6.638 7.584H.474l8.6-9.83L0 1.154h7.594l5.243 6.932ZM17.61 20.644h2.039L6.486 3.24H4.298Z" />
+            </svg>
+          </a>
+
+          <!-- Instagram -->
+          <a href="https://instagram.com/avnishkirnalli" class="iico ig" aria-label="Instagram" title="Instagram">
+            <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+              <path
+                d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zM12 0C8.741 0 8.333.014 7.053.072 2.695.272.273 2.69.073 7.052.014 8.333 0 8.741 0 12c0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98C8.333 23.986 8.741 24 12 24c3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98C15.668.014 15.259 0 12 0zm0 5.838a6.162 6.162 0 1 0 0 12.324 6.162 6.162 0 0 0 0-12.324zM12 16a4 4 0 1 1 0-8 4 4 0 0 1 0 8zm6.406-11.845a1.44 1.44 0 1 0 0 2.881 1.44 1.44 0 0 0 0-2.881z" />
+            </svg>
+          </a>
+
+          <!-- Blog -->
+          <a href="blog.html" class="iico bl" aria-label="Blog" title="Blog">
+            <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+              <path d="M17 3H7c-1.1 0-2 .9-2 2v16l7-3 7 3V5c0-1.1-.9-2-2-2z" />
+            </svg>
+          </a>
+
+        </div><!-- #dico -->
+      </div><!-- #ddesc -->
+    </div><!-- .row -->
+  </div><!-- #dhead -->
+
+  <hr>
+
+  <!-- ════════════════════ BIO ════════════════════ -->
+  <div id="bio" class="container">
+    <div class="ctitle">bio</div>
+    I'm a Computer Engineering student at SPIT, Mumbai. I've always been someone who likes understanding software at
+    every layer, from building functional apps and websites to working close to the metal with OpenGL and DirectX. That
+    low-level curiosity is what first pulled me into serious software development, and it's stuck with me ever
+    since. When the AI wave hit, it pulled me in too, and that's where most of my energy goes now, building RAG
+    pipelines and upskilling on state-of-the-art ML techniques. I like that my foundation is broad; it means when I'm
+    working on AI systems, I'm not just thinking about models in isolation, but about how they fit into real, working
+    software. I recently started writing about what I'm building and thinking on <a href="blog.html">my blog</a>.
+  </div>
+
+  <!-- ════════════════════ EXPERIENCE ════════════════════ -->
+  <div id="experience" class="container">
+    <div class="ctitle">experience</div>
+
+    <div class="bracket-group">
+      <div class="bracket-side">
+        <span class="bracket-label">Alongside Education</span>
+      </div>
+      <div class="bracket-entries">
+
+        <!-- Betide Studio -->
+        <div class="entry row">
+          <div class="timespan">Oct 2024 – Aug 2025</div>
+          <div class="ico">
+            <div class="entry-dot"></div>
+          </div>
+          <div class="desc">
+            <strong><a href="https://betide.studio/" target="_blank" rel="noopener">Betide Studio</a></strong> —
+            Programmer
+            <p>Built plugin systems and integrated them across Android and iOS platforms. Worked on cross-platform
+              mobile features within a production game studio environment.</p>
+          </div>
+        </div>
+
+        <!-- Outscal -->
+        <div class="entry row">
+          <div class="timespan">Apr – Sep 2023</div>
+          <div class="ico">
+            <div class="entry-dot"></div>
+          </div>
+          <div class="desc">
+            <strong><a href="https://outscal.com/" target="_blank" rel="noopener">Outscal</a></strong> — Subject Matter
+            Expert, Unreal Engine
+            <p>Solo-developed projects for an upcoming Unreal Engine game development course. Focused on clear,
+              well-commented instructional code and Git repository maintenance for student consumption.</p>
+          </div>
+        </div>
+
+        <!-- Plutoverse / pluto.house -->
+        <div class="entry row">
+          <div class="timespan">May – Nov 2022</div>
+          <div class="ico">
+            <div class="entry-dot"></div>
+          </div>
+          <div class="desc">
+            <strong><a href="https://pluto.house/" target="_blank" rel="noopener">Pluto.house</a> (formerly
+              Plutoverse)</strong> — Game
+            Programmer
+            <p>Joined a 35-40 person team building a metaverse game, where I worked on multiplayer replication, core
+              gameplay mechanics, and custom in-engine tools in Unreal Engine. The company later moved away from the
+              playable game altogether, shifting toward internet-native digital characters, virtual influencers, and
+              mobile-first media - and now operates as pluto.house.</p>
+          </div>
+        </div>
+
+        <!-- Ancient India Games -->
+        <div class="entry row">
+          <div class="timespan">Jan – Apr 2022</div>
+          <div class="ico">
+            <div class="entry-dot"></div>
+          </div>
+          <div class="desc">
+            <strong>Ancient India Games</strong> — Game Developer
+            <p>Contributed to <em>Kalki: The Beginning of a New Era</em>, working on story integration, gameplay
+              mechanics, UI systems, and in-game AI behavior. The studio was later discontinued before the game's
+              release.</p>
+          </div>
+        </div>
+
+      </div><!-- .bracket-entries -->
+    </div><!-- .bracket-group -->
+  </div><!-- #experience -->
+
+  <!-- ════════════════════ EDUCATION ════════════════════ -->
+  <div id="education" class="container">
+    <div class="ctitle">education</div>
+
+    <!-- SPIT / Education — current -->
+    <div class="entry row">
+      <div class="timespan">Aug 2026 – Present</div>
+      <div class="ico">
+        <div class="entry-dot active"></div>
+      </div>
+      <div class="desc">
+        <strong>Sardar Patel Institute of Technology, Mumbai</strong> — Computer Engineering (B.Tech)
+        <p>Pursuing a B.Tech in Computer Engineering, focused on AI/ML - building towards where the field is heading
+          next.</p>
+      </div>
+    </div>
+
+    <!-- VVP Polytechnic -->
+    <div class="entry row">
+      <div class="timespan">Aug 2023 - May 2026</div>
+      <div class="ico">
+        <div class="entry-dot"></div>
+      </div>
+      <div class="desc">
+        <strong>VVP Polytechnic</strong> — Diploma in Computer Engineering (MSBTE)
+        <p>Built a strong foundation in computer engineering under the MSBTE curriculum, combining hands-on lab work
+          with solid theoretical grounding.</p>
+      </div>
+    </div>
+
+  </div><!-- #education -->
+
+  <!-- ════════════════════ TECH STACK ════════════════════ -->
+  <div id="stack" class="container">
+    <div class="ctitle">tech stack</div>
+    <div class="stack-grid">
+      <div class="stack-group">
+        <h3>AI / Machine Learning</h3>
+        <p>NumPy, Pandas, Scikit-learn, PyTorch, Hugging Face, LangChain, LlamaIndex, Ollama, Vector Databases (FAISS,
+          Chroma), RAG Pipelines</p>
+      </div>
+      <div class="stack-group">
+        <h3>Languages</h3>
+        <p>C++, C, Assembly, Python, JavaScript, Java, Bash, Kotlin, XML, Swift, Objective-C</p>
+      </div>
+      <div class="stack-group">
+        <h3>Web Development &amp; Backend</h3>
+        <p>HTML &amp; CSS, React, AngularJS, Next.js, Node.js, Express.js, MySQL, WebRTC</p>
+      </div>
+      <div class="stack-group">
+        <h3>Cloud &amp; DevOps</h3>
+        <p>Docker, Google Cloud, AWS, Firebase, Vercel, Railway, Git, Postman</p>
+      </div>
+      <div class="stack-group">
+        <h3>Mobile Development</h3>
+        <p>Flutter (Dart), Android native (Java, Kotlin, XML), iOS (Swift, Objective-C)</p>
+      </div>
+      <div class="stack-group">
+        <h3>Build Tools</h3>
+        <p>Make, CMake, Premake, Ninja</p>
+      </div>
+      <div class="stack-group">
+        <h3>Computer Graphics</h3>
+        <p>OpenGL, GLSL, HLSL, DirectX, Unreal Engine, SDL2, Dear ImGui, FreeType, Lua / Sol2</p>
+      </div>
+      <div class="stack-group">
+        <h3>Design &amp; Creative Tools</h3>
+        <p>Blender, Aseprite, Figma, Canva</p>
+      </div>
+    </div>
+  </div>
+
+  <!-- ════════════════════ PROJECTS ════════════════════ -->
+  <div id="pet-projects" class="container">
+    <div class="ctitle">projects</div>
+    <div id="projects-root">
+      <!-- Rendered by projects-renderer.js from projects.json -->
+      <p style="color:#aaa; font-size:0.9rem;">Loading projects…</p>
+    </div>
+  </div><!-- #pet-projects -->
+
+  <!-- ════════════════════ BLOG ════════════════════ -->
+  <div id="recent-blog" class="container">
+    <div class="ctitle">blog</div>
+    <ul class="blog-list" id="blog-list-root">
+      <li><span class="blog-date"></span><span class="blog-title" style="color:#bbb;">Loading…</span></li>
+    </ul>
+    <a href="blog.html" class="blog-all" id="blog-all-link" style="display:none;">all posts →</a>
+  </div>
+
+  <!-- ════════════════════ MISC ════════════════════ -->
+  <div id="misc" class="container">
+    <div class="ctitle">misc unsorted</div>
+    <ul>
+      <li>I regularly attend large-scale developer events, recently attended <strong>Microsoft Build</strong>, which is
+        where I developed appreciation for cloud-native architecture and AI tooling at scale</li>
+      <li>I spend a lot of my time just thinking about stuff</li>
+      <li>I'm fascinated by all the things Mathematics makes possible, including AI</li>
+      <li>I believe that current LLMs are not the key to AGI, but rather a stepping stone towards it</li>
+    </ul>
+  </div>
+
+  <div class="footer">
+    &copy; 2026 Avnish Kirnalli &nbsp;·&nbsp; built with plain HTML &amp; CSS &nbsp;·&nbsp; <a href="blog.html"
+      style="color:#bbb;">blog</a>
+  </div>
+
+  <!-- ════ Blog renderer (reads blog/posts.json) ════ -->
+  <script>
+    (function () {
+      function formatDate(iso) {
+        var d = new Date(iso + 'T00:00:00');
+        return d.toLocaleDateString('en-GB', { day: 'numeric', month: 'short', year: 'numeric' });
+      }
+
+      fetch('blog/posts.json')
+        .then(function (r) { return r.json(); })
+        .then(function (posts) {
+          var list = document.getElementById('blog-list-root');
+          var allLink = document.getElementById('blog-all-link');
+          if (!posts || !posts.length) {
+            list.innerHTML = '<li><span class="blog-title" style="color:#bbb;">No posts yet.</span></li>';
+            return;
+          }
+          // Sort newest-first, show max 3
+          posts = posts.slice().sort(function (a, b) { return new Date(b.date) - new Date(a.date); });
+          var shown = posts.slice(0, 3);
+          list.innerHTML = shown.map(function (p) {
+            return '<li>' +
+              '<span class="blog-date">' + formatDate(p.date) + '</span>' +
+              '<span class="blog-title"><a href="blog/post.html?file=' + encodeURIComponent(p.file) + '">' + p.title + '</a></span>' +
+              '</li>';
+          }).join('');
+          if (posts.length > 0) allLink.style.display = 'inline-block';
+        })
+        .catch(function () {
+          document.getElementById('blog-list-root').innerHTML =
+            '<li><span class="blog-title" style="color:#bbb;">Could not load posts.</span></li>';
+        });
+    })();
+  </script>
+
+  <!-- ════ Projects renderer (reads projects.json, no build step) ════ -->
+  <script>
+    (function () {
+
+      function escHtml(str) {
+        return String(str)
+          .replace(/&/g, '&amp;')
+          .replace(/</g, '&lt;')
+          .replace(/>/g, '&gt;')
+          .replace(/"/g, '&quot;');
+      }
+
+      function renderCard(p) {
+        var titleHtml = p.url
+          ? '<a href="' + escHtml(p.url) + '" target="_blank" rel="noopener">' + escHtml(p.title) + '</a>'
+          : escHtml(p.title);
+
+        var badgeHtml = p.badge
+          ? '<span class="proj-badge">' + escHtml(p.badge) + '</span>'
+          : '';
+
+        var statsHtml = (p.stats && p.stats.length)
+          ? p.stats.map(function (s) {
+            return '<span class="proj-stat">' + escHtml(s) + '</span>';
+          }).join('')
+          : '';
+
+        var tagsHtml = (p.tags && p.tags.length)
+          ? '<span class="proj-tags">' + escHtml(p.tags.join(', ')) + '</span>'
+          : '';
+
+        var bannerHtml = '';
+        if (p.image) {
+          var isVideo = p.image.endsWith('.mp4') || p.image.endsWith('.webm');
+          if (isVideo) {
+            bannerHtml = [
+              '  <div class="proj-img-wrap" id="banner-' + escHtml(p.id) + '">',
+              '    <video src="' + escHtml(p.image) + '" autoplay loop muted playsinline',
+              '      oncanplay="this.closest(\'.proj-img-wrap\').classList.add(\'loaded\')">',
+              '    </video>',
+              '  </div>'
+            ].join('\n');
+          } else {
+            bannerHtml = [
+              '  <div class="proj-img-wrap" id="banner-' + escHtml(p.id) + '">',
+              '    <img src="' + escHtml(p.image) + '"',
+              '         alt="' + escHtml(p.title) + '"',
+              '         loading="lazy"',
+              '         onload="this.closest(\'.proj-img-wrap\').classList.add(\'loaded\')"',
+              '         onerror="this.closest(\'.proj-img-wrap\').classList.add(\'loaded\')">',
+              '  </div>'
+            ].join('\n');
+          }
+        }
+
+        return [
+          '<div class="proj-card" id="proj-' + escHtml(p.id) + '">',
+          bannerHtml,
+          '  <div class="proj-body">',
+          '    <div class="proj-title">' + titleHtml + badgeHtml + '</div>',
+          statsHtml ? '    <div class="proj-stats">' + statsHtml + '</div>' : '',
+          '    <div class="proj-desc">' + escHtml(p.description) + '</div>',
+          tagsHtml,
+          '  </div>',
+          '</div>'
+        ].join('\n');
+      }
+
+      function renderGroup(g) {
+        var cards = g.projects.map(renderCard).join('\n');
+        return [
+          '<h3 class="proj-group-label">' + escHtml(g.label) + '</h3>',
+          '<div class="proj-grid">',
+          cards,
+          '</div>'
+        ].join('\n');
+      }
+
+      fetch('projects.json')
+        .then(function (r) { return r.json(); })
+        .then(function (data) {
+          var root = document.getElementById('projects-root');
+          root.innerHTML = data.groups.map(renderGroup).join('\n');
+        })
+        .catch(function (err) {
+          var root = document.getElementById('projects-root');
+          root.innerHTML = '<p style="color:#c00;">Could not load projects. ' +
+            'If viewing via file://, run a local server: <code>python3 -m http.server 8000</code></p>';
+          console.error('projects.json load error:', err);
+        });
+    })();
+  </script>
+
+</body>
+
+</html>
