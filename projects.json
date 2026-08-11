@@ -71,7 +71,7 @@
             "Cross-platform",
             "Batch rendering"
           ],
-          "description": "A fully custom 2D game engine following ECS architecture. Features automatic Python-based dependency setup, SDL rendering, dynamic DLL linking, batch rendering, and font rendering. Includes a Pong demo built with the engine. Actively maintained for cross-platform compatibility.",
+          "description": "A fully custom 2D game engine following ECS architecture. Features automatic Python-based dependency setup, SDL rendering, dynamic DLL linking, batch rendering, and font rendering. Includes a Pong demo built with the engine. Occasionally maintained for cross-platform compatibility.",
           "tags": [
             "C++",
             "SDL",
