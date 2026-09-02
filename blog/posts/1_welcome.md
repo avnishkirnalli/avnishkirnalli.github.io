@@ -23,6 +23,7 @@ Mostly things I'm working on or thinking through:
 - Occasional longer notes on things I read or watched that were worth sitting with
 - Any new game I start/finish playing
 
+
 No posting schedule. I'll write when I have something worth saying.
 
 ---
