@@ -10,5 +10,17 @@
       "welcome"
     ],
     "description": "Every blog starts somewhere. This one starts with a note about why I'd rather write long-form than keep everything compressed into a LinkedIn post."
+  },
+  {
+    "file": "posts/2_mumbai",
+    "title": "Moving to the dream city of Mumbai",
+    "date": "2026-09-03",
+    "tags": [
+      "college",
+      "mumbai",
+      "moving",
+      "life"
+    ],
+    "description": "My story about moving out from my hometown."
   }
 ]
