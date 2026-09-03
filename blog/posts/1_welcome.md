@@ -1,7 +1,3 @@
-# Welcome to my first blog
-
-*August 10, 2026*
-
 Every blog starts somewhere. This one starts with a note about why I'd rather write long-form than keep everything compressed into a LinkedIn post.
 
 ---
