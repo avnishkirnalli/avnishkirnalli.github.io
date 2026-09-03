@@ -22,5 +22,17 @@
       "life"
     ],
     "description": "My story about moving out from my hometown."
+  },
+  {
+    "file": "posts/3_cyberpunk",
+    "title": "Cyberpunk Got Me Thinking About a Lot More Than Cyberpunk",
+    "date": "2026-09-03",
+    "tags": [
+      "gaming",
+      "cyberpunk",
+      "edgerunners",
+      "cd-projekt-red"
+    ],
+    "description": "I recently started playing Cyberpunk 2077. And it got me thinking about a lot more."
   }
 ]
