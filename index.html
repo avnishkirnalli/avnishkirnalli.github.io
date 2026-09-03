@@ -949,8 +949,17 @@
 
   <div class="footer">
     &copy; 2026 Avnish Kirnalli &nbsp;·&nbsp; built with plain HTML &amp; CSS &nbsp;·&nbsp; <a href="blog.html"
-      style="color:#bbb;">blog</a>
+      style="color:#bbb;">blog</a> &nbsp;·&nbsp; <span id="main-page-views">...</span> views
   </div>
+
+  <script>
+    fetch('https://countapi.mileshilliard.com/api/v1/hit/avnishkirnalli_github_io_main')
+      .then(function(res) { return res.json(); })
+      .then(function(data) {
+        var el = document.getElementById('main-page-views');
+        if (el) el.innerText = data.value || 0;
+      }).catch(function(e){});
+  </script>
 
   <!-- ════ Blog renderer (reads blog/posts.json) ════ -->
   <script>
@@ -973,9 +982,17 @@
           posts.reverse();
           var shown = posts.slice(0, 4);
           list.innerHTML = shown.map(function (p) {
+            var postKey = p.file.split('/').pop();
+            fetch('https://countapi.mileshilliard.com/api/v1/get/avnishkirnalli_github_io_post_' + postKey)
+              .then(function(res) { return res.json(); })
+              .then(function(data) {
+                var el = document.getElementById('idx-views-' + postKey);
+                if (el) el.innerHTML = ' &middot; ' + (data.value || 0) + ' views';
+              }).catch(function(e){});
+
             return '<li>' +
               '<span class="blog-date">' + formatDate(p.date) + '</span>' +
-              '<span class="blog-title"><a href="blog/post.html?file=' + encodeURIComponent(p.file) + '">' + p.title + '</a></span>' +
+              '<span class="blog-title"><a href="blog/post.html?file=' + encodeURIComponent(p.file) + '">' + p.title + '</a><span id="idx-views-' + postKey + '" style="font-size:0.8rem; color:#bbb; margin-left:8px;"></span></span>' +
               '</li>';
           }).join('');
           if (posts.length > 0) allLink.style.display = 'inline-block';

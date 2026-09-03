@@ -295,10 +295,18 @@
 
           headerEl.className = 'post-header';
           headerEl.innerHTML = [
-            meta.date ? '<div class="post-date">' + formatDate(meta.date) + '</div>' : '',
+            meta.date ? '<div class="post-date">' + formatDate(meta.date) + '<span id="post-views"></span></div>' : '',
             '<h1>' + meta.title + '</h1>',
             tagsHtml
           ].join('');
+
+          var postKey = file.split('/').pop();
+          fetch('https://countapi.mileshilliard.com/api/v1/hit/avnishkirnalli_github_io_post_' + postKey)
+            .then(function(res) { return res.json(); })
+            .then(function(data) {
+              var viewEl = document.getElementById('post-views');
+              if (viewEl) viewEl.innerHTML = ' &middot; ' + (data.value || 0) + ' views';
+            }).catch(function(e) { console.error('CountAPI error:', e); });
         }
 
         // Render Markdown body

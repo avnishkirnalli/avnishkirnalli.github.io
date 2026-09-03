@@ -200,9 +200,17 @@
             '</div>'
             : '';
 
+          var postKey = p.file.split('/').pop();
+          fetch('https://countapi.mileshilliard.com/api/v1/get/avnishkirnalli_github_io_post_' + postKey)
+            .then(function(res) { return res.json(); })
+            .then(function(data) {
+              var el = document.getElementById('views-' + postKey);
+              if (el) el.innerHTML = ' &middot; ' + (data.value || 0) + ' views';
+            }).catch(function(e){});
+
           return [
             '<div class="post-item">',
-            '  <div class="post-meta">' + formatDate(p.date) + '</div>',
+            '  <div class="post-meta">' + formatDate(p.date) + '<span id="views-' + postKey + '"></span></div>',
             '  <h2 class="post-title"><a href="blog/post.html?file=' + encodeURIComponent(p.file) + '">' + p.title + '</a></h2>',
             p.description ? '  <p class="post-description">' + p.description + '</p>' : '',
             tagsHtml,
