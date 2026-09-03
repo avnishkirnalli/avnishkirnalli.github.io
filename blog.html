@@ -188,10 +188,8 @@
           return;
         }
 
-        // Sort newest first
-        posts = posts.slice().sort(function (a, b) {
-          return new Date(b.date) - new Date(a.date);
-        });
+        // Reverse the order of the entries in the .json file to put latest ones at top
+        posts.reverse();
 
         root.innerHTML = posts.map(function (p) {
           var tagsHtml = (p.tags && p.tags.length)

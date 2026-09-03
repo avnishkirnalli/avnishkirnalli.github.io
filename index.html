@@ -969,9 +969,9 @@
             list.innerHTML = '<li><span class="blog-title" style="color:#bbb;">No posts yet.</span></li>';
             return;
           }
-          // Sort newest-first, show max 3
-          posts = posts.slice().sort(function (a, b) { return new Date(b.date) - new Date(a.date); });
-          var shown = posts.slice(0, 3);
+          // Reverse original order to put latest one's at top, show max 4
+          posts.reverse();
+          var shown = posts.slice(0, 4);
           list.innerHTML = shown.map(function (p) {
             return '<li>' +
               '<span class="blog-date">' + formatDate(p.date) + '</span>' +
